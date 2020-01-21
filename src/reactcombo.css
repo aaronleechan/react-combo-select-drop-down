@@ -1,0 +1,77 @@
+.combobox-container{
+    position: relative;
+}
+
+.combobox{
+    margin-top: 5px;
+}
+
+.combobox-column-list{
+    position: absolute;
+    list-style-type: none;
+    height: 200px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,2);
+    border-radius: 8px;
+    z-index: 1;
+    overflow: auto;
+    overflow-x: auto;
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    left: "1.3%"
+}
+
+.combobox-container{
+    margin-top: 8px;
+    z-index: 1;
+    width: 200px;
+    text-align: center;
+}
+
+.arrow{
+    position: relative;
+    top: -18px;
+}
+
+.combobox-list arrow::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+}
+
+.combobox-column-list li{
+    position: relative;
+    line-height: 2.5;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.combobox-over{
+    margin-top: 8px;
+}
+
+.combobox-over .arrow::after, .popover .arrow::before{
+    position: absolute;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0.5rem .5rem .5rem;
+}
+
+.combobox-over .arrow::before{
+    border-bottom-color: rgba(0,0,0,.25)
+}
+
+.checkbox-style{
+    width: 26px;
+    height: 20px;
+}
+
+.combobox-over .arrow::after{
+    top: 6px;
+    border-bottom-color: #E1E1E1
+}
+
+.combobox-body{
+    padding: 8px 2px;
+}
